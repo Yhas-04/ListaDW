@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: olivedrab;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: darkolivegreen;
+    color: white;
+    padding: 1rem 2rem;
+    z-index: 10;
+}
+header nav a {
+    color: white;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+header button {
+    background: firebrick;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+    text-align: center;
+    background: url("https://placehold.co/1200x600/png") center/cover no-repeat;
+    color: black;
+    padding-top: 4rem;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.beneficios {
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+.card {
+    background: white;
+    flex: 1 1 calc(25% - 1rem);
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+}
+.card span {
+    color: #c00;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .beneficios {
+        flex-direction: column;
+    }
+    .card {
+        flex: 1 1 100%;
+    }
+}
+s

@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+}
+.info-bar {
+    background: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url("https://t3.ftcdn.net/jpg/02/36/84/02/360_F_236840201_FlnlradaLkFSfFZ8OfMFHCWSaKc4AbjF.jpg") center/cover no-repeat;
+    height: 300px;
+    color: black;
+    text-shadow: 1px 1px 3px black;
+    text-align: center;
+}
+.banner h1 {
+    font-size: 2rem;
+}
+.banner p {
+    font-size: 1.2rem;
+}
+.descricao p{
+    padding: 2rem;
+    text-align: center;
+    background-color: indianred;
+}
+.descricao .destaque {
+    color: #c00;
+}
+.atracoes {
+    background: bisque;
+    display: flex;
+    padding-left: 15rem;
+    padding-top: 2rem;
+    gap: 10rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid dimgrey;
+    border-radius: 0.5rem;
+    width: 10rem;
+    background-color: indianred;
+    padding: 0.5rem;
+    text-align: center;
+}
+.card img {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(50% - 1rem);
+    }
+}
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 100%;
+    }
+}
