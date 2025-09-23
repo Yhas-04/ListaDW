@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <button onclick="gerar()">Gerar Números</button>
+  <p id="numeros"></p>
+
+  <script>
+    function gerar() {
+      let numeros = new Set()
+      while (numeros.size < 6) {
+        numeros.add(Math.floor(Math.random() * 60) + 1)
+      }
+      document.getElementById("numeros").innerText = Array.from(numeros).join(", ")
+    }
+  </script>
+</body>
+</html>
